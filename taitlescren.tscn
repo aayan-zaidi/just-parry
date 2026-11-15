@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://btnyhnk7q0pk4"]
+
+[ext_resource type="Script" uid="uid://v6llyvoyx863" path="res://taitlescren.gd" id="1_1b8bu"]
+[ext_resource type="Texture2D" uid="uid://bagtgdxkno11v" path="res://assets/images/taitlescren/zalogo2.png" id="2_pvmaj"]
+[ext_resource type="Script" uid="uid://b5h4st1wbn4og" path="res://zalogo.gd" id="3_01vim"]
+[ext_resource type="Texture2D" uid="uid://c87p52ghki3c1" path="res://assets/images/taitlescren/mesag2.png" id="4_lfhx7"]
+[ext_resource type="Script" uid="uid://dep1pr041w6lt" path="res://mesag.gd" id="5_lfhx7"]
+
+[node name="Title Screen" type="Control" unique_id=1121284867]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1b8bu")
+
+[node name="Background" type="ColorRect" parent="." unique_id=724326534]
+visible = false
+layout_mode = 0
+offset_top = -16.0
+offset_right = 1200.0
+offset_bottom = 721.0
+color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+
+[node name="Zalogo" type="Sprite2D" parent="." unique_id=1081750140]
+position = Vector2(350.9124, 250.50002)
+scale = Vector2(0.82264966, 0.8226496)
+texture = ExtResource("2_pvmaj")
+script = ExtResource("3_01vim")
+
+[node name="Mesag" type="Sprite2D" parent="." unique_id=419347426]
+position = Vector2(800, 575.0002)
+rotation = 0.034906585
+scale = Vector2(0.9748299, 1.0396825)
+texture = ExtResource("4_lfhx7")
+script = ExtResource("5_lfhx7")

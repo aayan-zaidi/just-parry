@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dibpg6i3uwe4q"]
+
+[ext_resource type="Script" uid="uid://ccydy8w7n5yxt" path="res://gamebver.gd" id="1_2owar"]
+[ext_resource type="Texture2D" uid="uid://dm4g51ylo73dp" path="res://assets/images/gameover/lost.png" id="2_2owar"]
+[ext_resource type="Script" uid="uid://b5h4st1wbn4og" path="res://zalogo.gd" id="3_u2cs4"]
+[ext_resource type="Texture2D" uid="uid://b2ne8d0trta1g" path="res://assets/images/gameover/mesag.png" id="4_pdr6f"]
+[ext_resource type="Script" uid="uid://dep1pr041w6lt" path="res://mesag.gd" id="5_076nu"]
+[ext_resource type="AudioStream" uid="uid://dnf18tduewqkm" path="res://getout.mp3" id="6_4twi7"]
+
+[node name="Game over" type="Control" unique_id=1128664833]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2owar")
+
+[node name="Background" type="ColorRect" parent="." unique_id=952161499]
+visible = false
+layout_mode = 0
+offset_top = -16.0
+offset_right = 1200.0
+offset_bottom = 721.0
+color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+
+[node name="Zalogo" type="Sprite2D" parent="." unique_id=199997517]
+position = Vector2(571.63153, 287.12982)
+rotation = 0.1308997
+scale = Vector2(1.0462457, 1.0462455)
+texture = ExtResource("2_2owar")
+script = ExtResource("3_u2cs4")
+
+[node name="Mesag" type="Sprite2D" parent="." unique_id=2130046564]
+position = Vector2(590.0001, 416.0001)
+rotation = 0.05235988
+scale = Vector2(0.9748299, 1.0396825)
+texture = ExtResource("4_pdr6f")
+script = ExtResource("5_076nu")
+
+[node name="GETOUT" type="AudioStreamPlayer" parent="." unique_id=685385505]
+stream = ExtResource("6_4twi7")
